@@ -14,6 +14,7 @@ public class StatsServiceTest {
         int actualSum = service.calcSum(sales);
         Assertions.assertEquals(expectedSum, actualSum);
     }
+
     @Test
     public void calculateMonthlyAverageSum() {
         StatsService service = new StatsService();
@@ -46,6 +47,7 @@ public class StatsServiceTest {
 
         Assertions.assertEquals(expectedDay, actualDay);
     }
+
     @Test
     public void calculateBelowAverageSales() {
         StatsService service = new StatsService();
@@ -55,6 +57,7 @@ public class StatsServiceTest {
         int actualMouth = service.calculateBelowAverageSales(sales);
         Assertions.assertEquals(expectedMouth, actualMouth);
     }
+
     @Test
     public void calculateUpAverageSales() {
         StatsService service = new StatsService();

@@ -39,7 +39,7 @@ public class StatsService {
     }
 
     public int calculateBelowAverageSales(long[] sales) {
-        int count =0;
+        int count = 0;
         int averageSum = calcAverageSum(sales);
         for (long sale : sales) {
             if (sale < averageSum) {
